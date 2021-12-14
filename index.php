@@ -80,6 +80,6 @@
 	$message = "<p>Была запущена программа загрузки МАРС в OPAC. <a href='http://192.168.10.121/opacg/mail_mars/index.php'>Посмотреть результаты</a></p>";
 	$sended = smtpmail("bogdanovichi06@rambler.ru", "MARS", $message, "OA"); 
 	$sended = smtpmail("biblio@chelreglib.ru", "MARS", $message, "OA");*/
-$sended = smtpmail("bogdanovichi06@rambler.ru", "MARS", $message, "OA"); 
+$sended = smtpmail("bogdanovichi06@rambler.ru", "MARS", "23", "OA"); 
 	//$sended = smtpmail("bogdanovichi06@rambler.ru", "MARS", "123"); 
 ?>
