@@ -26,7 +26,7 @@
 		$header.="MIME-Version: 1.0\r\n";
 		$header.="Content-Type: text/html; charset=utf-8\r\n";
 		$header.="Content-Transfer-Encoding: 8bit\r\n";
-		 
+		 print $header;
 		$smtp_conn = fsockopen("ssl://smtp.yandex.ru", 465,$errno, $errstr, 10);
 		 if(!$smtp_conn) {print "соединение с серверов не прошло"; fclose($smtp_conn); exit;}
 		$data = get_data($smtp_conn);
